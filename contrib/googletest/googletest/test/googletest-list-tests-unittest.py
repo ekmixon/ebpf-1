@@ -142,10 +142,10 @@ class GTestListTestsUnitTest(gtest_test_utils.TestCase):
       flag = ''
       flag_expression = 'not set'
     elif flag_value == '0':
-      flag = '--%s=0' % LIST_TESTS_FLAG
+      flag = f'--{LIST_TESTS_FLAG}=0'
       flag_expression = '0'
     else:
-      flag = '--%s' % LIST_TESTS_FLAG
+      flag = f'--{LIST_TESTS_FLAG}'
       flag_expression = '1'
 
     args = [flag]
